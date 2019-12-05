@@ -1,0 +1,58 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "144109",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "1722339",
+      "name": "上 箭头",
+      "font_class": "shangjiantou",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "2427773",
+      "name": "向左",
+      "font_class": "xiangzuo",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "3168555",
+      "name": "个人中心",
+      "font_class": "renwu",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "4144175",
+      "name": "客服 耳机 人工服务 线性",
+      "font_class": "kefuerjirengongfuwuxianxing",
+      "unicode": "e953",
+      "unicode_decimal": 59731
+    },
+    {
+      "icon_id": "8252048",
+      "name": "扳手",
+      "font_class": "icon_repair",
+      "unicode": "e503",
+      "unicode_decimal": 58627
+    },
+    {
+      "icon_id": "8604685",
+      "name": "向左",
+      "font_class": "next-copy",
+      "unicode": "e522",
+      "unicode_decimal": 58658
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+/*
+* @Author: lie
+* @Date:   2019-11-29 15:23:07
+* @Last Modified by:   lie
+* @Last Modified time: 2019-12-01 11:35:08
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+body{
+	overflow: hidden;
+	 font: 14px/1.5 "Heletica Neue";
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+.topbar{
+	z-index: 5;
+}
+.nav{
+	position: fixed;
+	z-index: 1;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+.nav ol li{
+	width: 1000px;
+	margin: 0px auto;
+}
+.nav ol li a{
+	float: left;
+	width: 200px;
+	line-height: 70px;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	transition: 1s;
+}
+.nav ol li:nth-child(1):hover a{
+	background-color: skyblue;
+}
+.nav ol li:nth-child(2):hover a{
+	background-color: orange;
+}
+.nav ol li:nth-child(3):hover a{
+	background-color: lime;
+}
+.nav ol li:nth-child(4):hover a{
+	background-color: pink;
+}
+.nav ol li:nth-child(5):hover a{
+	background-color: purple;
+}
+
+.aside{
+	position: fixed;
+	z-index: 1;
+	right: 10px;
+	top: 50%;
+	margin-top: -117px;
+}
+.aside li{
+	width: 20px;
+	height: 20px;
+	border: 1px solid red;
+	border-radius: 50%;
+	margin: 10px;
+	cursor: pointer;
+}
+.aside li.current{
+	border: 2px solid yellow;
+}
+section{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0px;
+}
+section>div{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+ .screen1 .title{
+	position: absolute;
+	bottom: 130px;
+	width: 100%;
+	left: 0px;
+	text-align: center;
+	color: #fff;
+}
+ .title h1.right{
+	display: inline-block;
+	font-size: 36px;
+	padding: 10px;
+	transition: 2s;
+}
+ .title h1.left{
+	display: inline-block;
+	font-size: 36px;
+	padding: 10px;
+	transition: 2s;
+}
+ .title .txt{
+	width: 500px;
+	font-size: 12px;
+	margin: 10px auto;
+	transition: 2s;
+	text-align: left;
+	text-indent: 2em;
+	padding: 40px;
+	box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.5) inset;
+	position: relative;
+	transition: 2s;
+}
+.title .txt .lfbt{
+	content: '';
+	display: inline-block;
+	height: 0%;
+	width: 0%;
+	border: 10px solid transparent;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.title .txt .ritp{
+	content: '';
+	display: inline-block;
+	height: 0%;
+	width: 0%;
+	border: 10px solid transparent;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+.title .txt .onlfbt{
+	width: 100%;
+	height: 100%;
+	border-top-color: red;
+	border-left-color: red;
+	transition: width 2s,height 2s;
+}
+
+.title .txt .onritp{
+	width: 100%;
+	height: 100%;
+	border-bottom-color: yellow;
+	border-right-color: yellow;
+	transition: width 2s ,height 2s;
+}
+
+ .title .txt h2{
+ 	font-size: 20px;
+ 	padding-top: 10px;
+}
+ .title .txt h4{
+ 	font-size: 16px;
+ 	padding: 20px 0px;
+}
+ .title .txt p{
+ 	line-height: 25px;
+}
+.no h1.left{
+	margin-left: -1400px;
+	transform: rotate(180deg);
+}
+.no h1.right{
+	transform: rotate(180deg);
+}
+.no .txt{
+	transform: scale(0.1);
+	opacity: 0.1;
+}
+section .screen1{
+	background-image: url('../images/screen1.jpg');
+	background-size: 100% 100%;
+
+}
+section .screen2{
+	background-image: url('../images/screen1.jpg');
+	background-size: 100% 100%;
+}
+section .screen2 .title{
+	color: #fff;
+	font-size: 36px;
+	position: absolute;
+	top: 50px;
+	left: 100px;
+	font-weight: 500;
+}  
+.pic{
+    width:120px;
+    height:180px;
+    margin:0px auto;
+    border:1px solid red;
+    position:relative;
+    top: 38%;
+    transform-style:preserve-3d;/*设置3D环境*/
+    /*perspective:800px;不用这个*/
+    transform:perspective(800px)  rotateY(0deg);
+ }
+.pic .box{
+      position:absolute;
+      width:120px;
+      height:180px;
+      padding-bottom: 15px;
+      overflow: hidden;
+      border-radius:5px;
+      box-shadow:0 0 10px #fff;
+      border: 1px solid #ccc;
+      background-color: #999;
+      transition: 1s;
+      /*背景渐变效果！important*/
+     /*  -webkit-box-reflect:below 10px
+      -webkit-linear-gradient(top,rgba(0,0,0,0) 80%,rgba(0,0,0,1) 100%); */
+}
+.pic .box>img{
+    width: 100%;
+   /*  height: 100%; */
+}
+.pic .box h4{
+	color: #fff;
+	font-size: 13px;
+}
+.pic .box i{
+	color: #fff;
+	font-size: 7px;
+	font-style: normal;
+}	
+.pic p{
+  width:1200px;height:1200px;
+  /*放射性背景渐变*/
+  background:
+  -webkit-radial-gradient(center center,400px 400px,rgba(255,255,255,0.2),rgba(0,0,0,0));
+  position:absolute;
+  left:50%;top:100%;
+  /*往回移动位置*/
+  margin-left:-600px;
+  margin-top:-600px;
+  transform:rotateX(90deg);
+  border-radius:600px;
+}
+section .screen3{
+	background-image: url('../images/screen1.jpg');
+	background-size: 100% 100%;
+}
+section .screen3 .wrap{
+	padding-top: 40px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+section .screen3 .wrap ul{
+	width: 20000px;
+}
+section .screen3 .wrap ul li{
+	width: 250px;
+	height: 400px;
+	float: left;
+	transition: 1s;
+	background: url('../images/show01.jpg') center center / 100% no-repeat;
+	position: relative;
+}
+section .screen3 .wrap ul li:nth-child(2){
+	background: url('../images/show02.jpg') center center / 100% no-repeat;
+}
+section .screen3 .wrap ul li:nth-child(3){
+	background: url('../images/show03.jpg') center center / 100% no-repeat;
+}
+section .screen3 .wrap ul li:nth-child(4){
+	background: url('../images/show04.jpg') center center / 100% no-repeat;
+}
+section .screen3 .wrap ul li:nth-child(5){
+	background: url('../images/show05.jpg') center center / 100% no-repeat;
+}
+section .screen3 .wrap ul li:nth-child(6){
+	background: url('../images/show06.jpg') center center / 100% no-repeat;
+}
+section .screen3 .wrap ul li a{
+	color: #fff;
+}
+section .screen3 .wrap ul li .text{
+	width: 250px;
+	height: 100px;
+	text-align: center;	
+	position: absolute;
+	margin-top: 150px;
+	transition: 1s;
+	font-size: 18px;
+}
+section .screen3 .wrap ul li .text h3{
+	font-size: 28px;
+}
+section .screen3 .wrap ul li h4.bgopacity{
+	font-size: 12px;
+	display: none;
+	width: 355px;
+	position: absolute;
+	bottom: -3px;
+	opacity: 0.3;
+	padding: 10px;
+}

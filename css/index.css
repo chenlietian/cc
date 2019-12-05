@@ -1,0 +1,353 @@
+/*
+* @Author: lie
+* @Date:   2019-11-20 11:41:58
+* @Last Modified by:   lie
+* @Last Modified time: 2019-11-29 14:44:29
+*/
+/* header */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/iconfont.woff2') format('woff2'),
+        url('../font/iconfont.woff') format('woff'),
+        url('../font/iconfont.ttf') format('truetype'),
+        url('../font/iconfont.svg#iconfont') format('svg');
+  }
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(33, 33, 33);
+}
+
+/* .content部分 */
+.content{
+    background-color: rgb(33, 33, 33);
+}
+.content .system-plan{
+    text-align: center;
+    overflow: hidden;
+   
+}
+.content .system-plan h2{
+    font-size: 26px;
+    line-height: 1.4;
+    color: rgb(255, 255, 255);
+    margin: 60px 0px;
+    font-weight: 500;
+}
+.content .system-plan ul{
+    width: 1140px;
+    overflow: hidden;
+    margin: 0px auto;
+}
+.content .system-plan ul li{
+    float: left;
+    margin:40px 50px;
+    width: 90px;
+    height: 78px;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+.content .system-plan ul li a.zc{
+    display: block;
+}
+.content .system-plan ul li a.hv{
+    display: none;
+}
+.content .system-plan ul li h3{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 200;
+    
+}
+
+.contentv .flash-purchase ul{
+    width: 1226px;
+}
+.content .flash-purchase ul li{
+    float: left;
+    width: 230px;
+    height: 327px;
+    border: 1px solid transparent;
+    border-top-color: yellow;
+    margin: 8px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.content .flash-purchase ul li:nth-child(1){
+    border-top-color: red;
+}
+.content .flash-purchase ul li:nth-child(1){
+    margin-left: 0px;
+}
+.content .flash-purchase ul li:nth-child(5){
+    margin-right: 0px;
+}
+.content .flash-purchase ul li.one .round{
+    font-size: 21px;
+    color: #ef3a3b;
+    padding-top:25px;
+}
+.content .flash-purchase ul li.one img{
+    margin: 28px auto;
+    width: 35px;
+}
+.content .flash-purchase ul li.one .title{
+    color: rgba(0, 0, 0, .54);
+    font-size: 15px;
+}
+.content .flash-purchase ul li.one .time span{
+    display: inline-block;
+    width: 46px;
+    height:46px;
+    background-color: #605751;
+    text-align: center;
+    line-height: 46px;
+    color: #fff;
+    font-size: 24px;
+    margin: 30px 0;
+}
+.content .flash-purchase ul li.one .time i{
+    font-style: normal;
+    width: 15px;
+    height: 46px;
+    line-height: 46px;
+    color: #605751;
+    font-size: 28px;
+}
+.content .flash-purchase ul li img{
+    width: 100%;
+}
+.content .flash-purchase ul li h3{
+    color: #212121;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px 20px 3px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+}
+.content .flash-purchase ul li .desc{
+    height: 18px;
+    margin: 0 20px 12px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    color: #b0b0b0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.content .flash-purchase ul li p span{
+    color: #ff6709;
+}
+.content .flash-purchase ul li p del{
+    color: #b0b0b0;
+}
+
+/* 展示tab栏部分 */
+.content .experience-tab h2{
+    font-size: 22px;
+    font-weight: 200;
+    padding-left: 20px;
+    border-left: 5px solid #0b8bca;
+    margin: 8px 0px;
+    color: #fff;
+}
+.content .experience-tab .left{
+    float: left;
+    width: 20%;
+    background-color: #2b2f30;
+}
+.content .experience-tab .left li{
+    margin: 12px;
+    width: 201px;
+    height: 110px;
+}
+.content .experience-tab .left li.active{
+    border-right: 10px solid #0b8bca;
+    position: relative;
+}
+.content .experience-tab .left li::after{
+    content: '';
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border: 13px solid transparent;
+    border-left: 12px solid #0b8bca;
+    position: absolute;
+    top: 38%;
+    right: -34px;
+}
+.content .experience-tab .left ul li img{
+    width: 100%;
+}
+.content .experience-tab .right{
+    float: left;
+    width: 79.9%;
+    height: 540px;
+    display: block;
+    position: relative;
+}
+.content .experience-tab .right li .box{
+    width: 280px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+.content .experience-tab .right li .box h3{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.content .experience-tab .right li .box p{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+}
+.content .experience-tab .right li .box a{
+    display: block;
+    width: 60px;
+    height: 30px;
+    margin: 0px auto;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    padding: 5px 8px;
+}
+.content .experience-tab .right li .box a:hover{
+    border: 1px solid #0b8bca;
+    color: #0b8bca;
+}
+.content .experience-tab .right li{
+    display: none;
+}
+.content .experience-tab .right li:nth-child(1){
+    display: block;
+    height: 500px;
+    background-image: url('../images/tab-bg01.jpg');
+    background-size: 100% 100%;
+}
+.content .experience-tab .right li:nth-child(2){
+    display: none;
+    height: 500px;
+    background-image: url('../images/tab-bg02.jpg');
+    background-size: 100% 100%;
+}
+.content .experience-tab .right li:nth-child(3){
+    display: none;
+    height: 500px;
+    background-image: url('../images/tab-bg03.jpg');
+    background-size: 100% 100%;
+}
+.content .experience-tab .right li:nth-child(4){
+    display: none;
+    height: 500px;
+    background-image: url('../images/tab-bg04.jpg');
+    background-size: 100% 100%;
+}
+
+
+
+.content .advert img{
+    width: 100%;
+    margin: 30px 0px; 
+}
+.content .intelligence .box{
+    height: 50px;
+}
+.content .intelligence .box h2{
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+    display: inline-block;
+    color: #fff;
+}
+.content .intelligence .box ul{
+    float: right;
+}
+.content .intelligence .box ul li{
+    float: left;
+    margin: 10px;
+}
+.content .intelligence .box ul li a{
+    font-size: 16px;
+    color: #fff;
+}
+.content .intelligence .box ul li:nth-child(1) a{
+    color: rgb(241, 80, 26);
+    border-bottom: 2px solid rgb(241, 80, 26);
+}
+.content .intelligence .more ol li{
+    width: 232px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 8px;
+    float: left;
+    text-align: center;
+    transition: 0.5s;
+}
+.content .intelligence .more ol li:nth-child(1),
+.content .intelligence .more ol li:nth-child(6)
+{
+    margin-left: 0px;
+}
+.content .intelligence .more ol li:nth-child(1) img,
+.content .intelligence .more ol li:nth-child(6) img
+{
+    width: 100%;
+    height: 100%;
+}
+.content .intelligence .more ol li:nth-child(5),
+.content .intelligence .more ol li:nth-child(10)
+{
+    margin-right: 0px;
+}
+.content .intelligence .more ol li img{
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    margin-top: 20px;
+}
+.content .intelligence .more ol li:nth-child(1) img,
+.content .intelligence .more ol li:nth-child(6) img{
+    margin-top: 0px;
+}
+.content .intelligence .more ol li h3{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 18px;
+}
+.content .intelligence .more ol li p{
+    font-size: 12px;
+    color: #b0b0b0;
+    margin: 5px;
+}
+.content .intelligence .more ol li .price span{
+    color: #b0b0b0;
+}
+.content .intelligence .more ol li .price del{
+    color: #ff6700;
+}
+.content .intelligence .more ol li:hover{
+    transform: translate3d(0,-2px,0);
+    z-index: 2;
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
